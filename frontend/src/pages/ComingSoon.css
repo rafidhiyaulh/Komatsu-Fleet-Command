@@ -1,0 +1,68 @@
+.coming-soon {
+  flex: 1;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  background: #eeeeee;
+}
+
+.coming-card {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border: 1px solid #d9e1f2;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(24, 35, 58, 0.12);
+  text-align: center;
+}
+
+.coming-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: rgba(183, 199, 244, 0.35);
+  color: #2b3e68;
+  border: 1px solid rgba(107, 153, 200, 0.4);
+}
+
+.coming-title {
+  margin: 14px 0 6px;
+  font-size: 22px;
+  font-weight: 900;
+  color: #2b3e68;
+}
+
+.coming-text {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.coming-btn {
+  margin: 16px auto 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2b3e68, #6b99c8);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 13px;
+  border: 1px solid rgba(43, 62, 104, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.coming-btn:hover {
+  transform: translateY(-1px);
+}

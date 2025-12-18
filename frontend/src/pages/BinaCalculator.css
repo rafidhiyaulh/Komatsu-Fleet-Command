@@ -1,0 +1,283 @@
+.bina-container {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 26px 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.bina-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bina-header .bina-icon {
+  color: #2b3e68;
+  margin-top: 2px;
+}
+
+.bina-title {
+  margin: 0;
+  font-size: 22px;
+  color: #1f2937;
+}
+
+.bina-subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.bina-divider {
+  margin: 14px 0 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.bina-card {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.bina-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 820px) {
+  .bina-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bina-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bina-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.bina-hint {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.bina-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bina-radio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.bina-radio:hover {
+  border-color: #2b3e68;
+  background: #f7fafc;
+  transform: translateX(4px);
+}
+
+.bina-radio input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #cbd5e0;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+}
+
+.bina-radio input[type="radio"]:checked {
+  border-color: #2b3e68;
+  background: #2b3e68;
+}
+
+.bina-radio input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.bina-input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bina-number {
+  width: 120px;
+  padding: 10px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.bina-number:focus {
+  outline: none;
+  border-color: #2b3e68;
+  box-shadow: 0 0 0 3px rgba(43, 62, 104, 0.12);
+}
+
+.bina-range {
+  width: 100%;
+}
+
+.bina-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.bina-btn {
+  border: none;
+  border-radius: 24px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.bina-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bina-primary {
+  background: linear-gradient(135deg, #2b3e68 0%, #6b99c8 100%);
+  color: #ffffff;
+  width: 280px;
+}
+
+.bina-secondary {
+  background: #a3b18a;
+  color: #111827;
+  width: 160px;
+}
+
+.bina-btn:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
+.bina-kpi {
+  margin: 10px 0 4px;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #111827;
+}
+
+.bina-kpi-sub {
+  margin: 0 0 10px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.bina-metrics {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (min-width: 820px) {
+  .bina-metrics {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.bina-metric-title {
+  margin: 0;
+  font-weight: 700;
+  color: #111827;
+}
+
+.bina-metric-body {
+  margin: 8px 0 0;
+  color: #374151;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.bina-bars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: end;
+  margin-top: 10px;
+}
+
+.bina-bar-wrap {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.bina-bar-label {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.bina-bar {
+  height: 140px;
+  border-radius: 10px;
+  background: #2b3e68;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.bina-bar.secondary {
+  background: #6b99c8;
+}
+
+.bina-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+@media (min-width: 620px) {
+  .bina-cta {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.bina-note {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 12px;
+}
