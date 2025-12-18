@@ -56,6 +56,7 @@
 import { useEffect, useState } from "react";
 import { CreditCard, Gift, Award, Sparkles } from "lucide-react";
 import "./Redeem.css";
+import { apiUrl } from "../../utils/api";
 
 const Redeem = () => {
   const [points, setPoints] = useState(0);
@@ -67,7 +68,7 @@ const Redeem = () => {
         alert("Please login to redeem points");
         return;
       }
-      const response = await fetch("http://localhost:5000/api/gamification/points", {
+      const response = await fetch(apiUrl("/api/gamification/points"), {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -105,7 +106,7 @@ const Redeem = () => {
       setPoints(updatedPoints);
   
       try {
-        const resp = await fetch("http://localhost:5000/api/gamification/redeem-reward", {
+        const resp = await fetch(apiUrl("/api/gamification/redeem-reward"), {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
